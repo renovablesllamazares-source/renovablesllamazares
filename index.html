@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarTech - Instalación de Placas Solares</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+        }
+        .solar-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-8 h-8 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/>
+                    </svg>
+                    <span class="text-2xl font-bold text-gray-800">SolarTech</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-blue-600 transition">Inicio</a>
+                    <a href="#servicios" class="text-gray-700 hover:text-blue-600 transition">Servicios</a>
+                    <a href="#beneficios" class="text-gray-700 hover:text-blue-600 transition">Beneficios</a>
+                    <a href="#contacto" class="text-gray-700 hover:text-blue-600 transition">Contacto</a>
+                </div>
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+                    Cotización Gratis
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-gradient text-white pt-20">
+        <div class="container mx-auto px-6 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl font-bold mb-6">Energía Solar para tu Hogar</h1>
+                    <p class="text-xl mb-8 text-blue-100">Reduce tu factura eléctrica hasta un 90% con nuestras instalaciones de placas solares de última generación.</p>
+                    <div class="space-x-4">
+                        <button class="bg-yellow-500 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition">
+                            Solicitar Presupuesto
+                        </button>
+                        <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
+                            Ver Proyectos
+                        </button>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="solar-animation">
+                        <svg class="w-80 h-80 mx-auto" viewBox="0 0 400 300" fill="none">
+                            <!-- Casa -->
+                            <rect x="100" y="150" width="200" height="120" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+                            <polygon points="90,150 200,80 310,150" fill="#DC2626" stroke="#B91C1C" stroke-width="2"/>
+                            
+                            <!-- Placas solares en el techo -->
+                            <rect x="120" y="100" width="40" height="30" fill="#1E3A8A" stroke="#1E40AF" stroke-width="1"/>
+                            <rect x="170" y="100" width="40" height="30" fill="#1E3A8A" stroke="#1E40AF" stroke-width="1"/>
+                            <rect x="220" y="100" width="40" height="30" fill="#1E3A8A" stroke="#1E40AF" stroke-width="1"/>
+                            
+                            <!-- Líneas de las placas -->
+                            <line x1="130" y1="105" x2="130" y2="125" stroke="#60A5FA" stroke-width="1"/>
+                            <line x1="140" y1="105" x2="140" y2="125" stroke="#60A5FA" stroke-width="1"/>
+                            <line x1="150" y1="105" x2="150" y2="125" stroke="#60A5FA" stroke-width="1"/>
+                            
+                            <line x1="180" y1="105" x2="180" y2="125" stroke="#60A5FA" stroke-width="1"/>
+                            <line x1="190" y1="105" x2="190" y2="125" stroke="#60A5FA" stroke-width="1"/>
+                            <line x1="200" y1="105" x2="200" y2="125" stroke="#60A5FA" stroke-width="1"/>
+                            
+                            <line x1="230" y1="105" x2="230" y2="125" stroke="#60A5FA" stroke-width="1"/>
+                            <line x1="240" y1="105" x2="240" y2="125" stroke="#60A5FA" stroke-width="1"/>
+                            <line x1="250" y1="105" x2="250" y2="125" stroke="#60A5FA" stroke-width="1"/>
+                            
+                            <!-- Sol -->
+                            <circle cx="320" cy="60" r="25" fill="#FCD34D"/>
+                            <line x1="320" y1="20" x2="320" y2="30" stroke="#FCD34D" stroke-width="3"/>
+                            <line x1="350" y1="35" x2="345" y2="40" stroke="#FCD34D" stroke-width="3"/>
+                            <line x1="360" y1="60" x2="350" y2="60" stroke="#FCD34D" stroke-width="3"/>
+                            <line x1="350" y1="85" x2="345" y2="80" stroke="#FCD34D" stroke-width="3"/>
+                            
+                            <!-- Rayos de energía -->
+                            <path d="M 140 100 Q 200 50 280 40" stroke="#FCD34D" stroke-width="2" fill="none" opacity="0.7"/>
+                            <path d="M 190 100 Q 230 60 300 50" stroke="#FCD34D" stroke-width="2" fill="none" opacity="0.7"/>
+                            <path d="M 240 100 Q 270 70 320 60" stroke="#FCD34D" stroke-width="2" fill="none" opacity="0.7"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Nuestros Servicios</h2>
+                <p class="text-xl text-gray-600">Soluciones completas en energía solar</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="text-blue-600 mb-4">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Instalación Residencial</h3>
+                    <p class="text-gray-600 mb-6">Sistemas solares personalizados para hogares, con garantía de 25 años y máximo rendimiento.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>✓ Estudio energético gratuito</li>
+                        <li>✓ Instalación en 1-2 días</li>
+                        <li>✓ Tramitación de permisos</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="text-green-600 mb-4">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zM10 6a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Instalación Comercial</h3>
+                    <p class="text-gray-600 mb-6">Soluciones escalables para empresas y edificios comerciales con máximo retorno de inversión.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>✓ Análisis de consumo empresarial</li>
+                        <li>✓ Financiación disponible</li>
+                        <li>✓ Monitoreo 24/7</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="text-purple-600 mb-4">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Mantenimiento</h3>
+                    <p class="text-gray-600 mb-6">Servicio técnico especializado para mantener tu sistema solar funcionando al 100%.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>✓ Limpieza profesional</li>
+                        <li>✓ Revisiones anuales</li>
+                        <li>✓ Reparaciones garantizadas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section id="beneficios" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">¿Por qué elegir energía solar?</h2>
+                <p class="text-xl text-gray-600">Beneficios que transformarán tu hogar</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">💰</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Ahorro Inmediato</h3>
+                    <p class="text-gray-600">Reduce tu factura eléctrica hasta un 90% desde el primer mes</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">🌱</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Energía Limpia</h3>
+                    <p class="text-gray-600">Contribuye al cuidado del medio ambiente con energía 100% renovable</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-yellow-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">📈</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Valorización</h3>
+                    <p class="text-gray-600">Aumenta el valor de tu propiedad hasta un 15%</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">🛡️</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Garantía Total</h3>
+                    <p class="text-gray-600">25 años de garantía en paneles y 10 años en instalación</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculadora de Ahorro -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold mb-4">Calcula tu Ahorro</h2>
+                    <p class="text-xl text-blue-100">Descubre cuánto puedes ahorrar con energía solar</p>
+                </div>
+                
+                <div class="bg-white text-gray-800 p-8 rounded-xl shadow-2xl">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Factura eléctrica mensual (€)</label>
+                            <input type="number" id="facturaInput" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="150" value="150">
+                            
+                            <label class="block text-sm font-medium mb-2 mt-4">Tamaño de tu hogar</label>
+                            <select id="tamanoHogar" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="1">Pequeño (1-2 habitaciones)</option>
+                                <option value="1.5" selected>Mediano (3-4 habitaciones)</option>
+                                <option value="2">Grande (5+ habitaciones)</option>
+                            </select>
+                            
+                            <button onclick="calcularAhorro()" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition mt-6">
+                                Calcular Ahorro
+                            </button>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-center">Tu Ahorro Estimado</h3>
+                            <div id="resultados" class="space-y-4">
+                                <div class="flex justify-between">
+                                    <span>Ahorro mensual:</span>
+                                    <span class="font-bold text-green-600" id="ahorroMensual">€135</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Ahorro anual:</span>
+                                    <span class="font-bold text-green-600" id="ahorroAnual">€1,620</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Ahorro en 25 años:</span>
+                                    <span class="font-bold text-green-600" id="ahorro25Anos">€40,500</span>
+                                </div>
+                                <div class="border-t pt-4">
+                                    <div class="flex justify-between">
+                                        <span>Inversión estimada:</span>
+                                        <span class="font-bold" id="inversion">€8,500</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Retorno de inversión:</span>
+                                        <span class="font-bold text-blue-600" id="retorno">5.2 años</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Solicita tu Presupuesto Gratuito</h2>
+                    <p class="text-xl text-gray-600">Nuestros expertos te contactarán en menos de 24 horas</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <form id="contactForm" class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Nombre completo</label>
+                                <input type="text" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Tu nombre">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Teléfono</label>
+                                <input type="tel" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Tu teléfono">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="tu@email.com">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Tipo de propiedad</label>
+                                <select class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                    <option>Casa unifamiliar</option>
+                                    <option>Apartamento</option>
+                                    <option>Negocio/Empresa</option>
+                                    <option>Edificio comercial</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Mensaje (opcional)</label>
+                                <textarea rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition">
+                                Solicitar Presupuesto Gratuito
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-6">¿Por qué elegirnos?</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-3">
+                                    <div class="bg-green-500 text-white rounded-full p-1 mt-1">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold">+500 instalaciones realizadas</h4>
+                                        <p class="text-gray-600">Experiencia comprobada en toda España</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <div class="bg-green-500 text-white rounded-full p-1 mt-1">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold">Certificación oficial</h4>
+                                        <p class="text-gray-600">Instaladores autorizados y certificados</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <div class="bg-green-500 text-white rounded-full p-1 mt-1">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold">Financiación sin intereses</h4>
+                                        <p class="text-gray-600">Hasta 120 meses sin intereses</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-6 rounded-lg">
+                            <h4 class="font-bold text-lg mb-2">📞 Contacto directo</h4>
+                            <p class="text-gray-700 mb-2">Teléfono: <span class="font-semibold">900 123 456</span></p>
+                            <p class="text-gray-700 mb-2">Email: <span class="font-semibold">info@solartech.es</span></p>
+                            <p class="text-gray-700">Horario: Lunes a Viernes 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/>
+                        </svg>
+                        <span class="text-2xl font-bold">SolarTech</span>
+                    </div>
+                    <p class="text-gray-400">Líderes en instalación de sistemas de energía solar en España. Transformamos hogares con energía limpia y sostenible.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Servicios</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Instalación Residencial</li>
+                        <li>Instalación Comercial</li>
+                        <li>Mantenimiento</li>
+                        <li>Consultoría Energética</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Empresa</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Sobre Nosotros</li>
+                        <li>Proyectos</li>
+                        <li>Certificaciones</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contacto</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <p>📍 Madrid, España</p>
+                        <p>📞 900 123 456</p>
+                        <p>✉️ info@solartech.es</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 SolarTech. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Calculadora de ahorro
+        function calcularAhorro() {
+            const factura = parseFloat(document.getElementById('facturaInput').value) || 150;
+            const tamano = parseFloat(document.getElementById('tamanoHogar').value) || 1.5;
+            
+            // Cálculos estimados
+            const porcentajeAhorro = 0.9; // 90% de ahorro
+            const ahorroMensual = Math.round(factura * porcentajeAhorro);
+            const ahorroAnual = ahorroMensual * 12;
+            const ahorro25Anos = ahorroAnual * 25;
+            const inversion = Math.round(factura * tamano * 56.67); // Estimación basada en consumo
+            const retorno = (inversion / ahorroAnual).toFixed(1);
+            
+            // Actualizar resultados
+            document.getElementById('ahorroMensual').textContent = `€${ahorroMensual}`;
+            document.getElementById('ahorroAnual').textContent = `€${ahorroAnual.toLocaleString()}`;
+            document.getElementById('ahorro25Anos').textContent = `€${ahorro25Anos.toLocaleString()}`;
+            document.getElementById('inversion').textContent = `€${inversion.toLocaleString()}`;
+            document.getElementById('retorno').textContent = `${retorno} años`;
+        }
+
+        // Formulario de contacto
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simular envío del formulario
+            const button = e.target.querySelector('button[type="submit"]');
+            const originalText = button.textContent;
+            
+            button.textContent = 'Enviando...';
+            button.disabled = true;
+            
+            setTimeout(() => {
+                alert('¡Gracias por tu interés! Nos pondremos en contacto contigo en menos de 24 horas.');
+                button.textContent = originalText;
+                button.disabled = false;
+                e.target.reset();
+            }, 2000);
+        });
+
+        // Navegación suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Calcular ahorro inicial
+        calcularAhorro();
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98adfbd793bacfba',t:'MTc1OTg0NjI0NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
